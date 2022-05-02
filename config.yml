@@ -1,13 +1,36 @@
 DATA_FOLDER: '../data/raw/CXR8/CXR8/images/'
 TARGET_FOLDER: '../data/raw/images'
-FLATTENED_FOLDER: '../data/raw/flattened/'
-TEST_IMAGES:  '../data/labels/test_labels_filtered.csv'
-TRAIN_IMAGES: '../data/labels/train_labels_filtered.csv'
+DATA_DIR_FLATTENED: '../data/raw/flattened/'
+DATA_DIR_RESIZED: '../data/raw/resized/'
+DATA_DIR_TESTSET:  '../data/labels/test_labels_filtered.csv'
+DATA_DIR_TRAINSET: '../data/labels/train_labels_filtered.csv'
+CHECKPOINTS_FOLDER: '../models/checkpoints'
+PLOT_DIR_BINARY: '../plots/binary/'
 
-RANDOM_STATE: 42 # what else ;)
+
+# ml_settings
+NAME: 'Cxr8NetNoRegNoBN'
+NET: 'Cxr8NetNoRegNoBN'
+DEVICE: "gpu"
+TRAIN_SIZE: 0.8
+LEARNING_RATE: 0.002
 BATCH_SIZE: 16
-IMAGE_SIZE: 32 # in pixels, e.g. 32 = 32x32 images
-EPOCHS: 3
+EPOCHS: 20
+TRANSFORMER: 'Cxr8' #'Crop'
+CRITERION: 'Cross Entropy'
+OPTIMIZER: 'SGD'
+TASK: None # 'Classification' # if classification, creates binary evaluation plots
+SAVE_MODEL: False
+SCHEDULER: 'ExponentialLR'
+DROPOUT_RATE: 0.5
 
+IMAGE_WIDTH: 1000
+IMAGE_HEIGHT: 1000
+IMAGE_RESIZE: 32 # 32 for LeNet and for Cxr8Net*
+
+# plot settings
 COLOR_SEQUENTIAL:   "inferno" # matplotlib color map (used for heatmaps)
-COLOR_DISCRETE:     "Paired"  # matplotlib discrete set of colors (for statistical plots:  i.e. bar plots)
+COLOR_DISCRETE:     "Paired"  # matplotlib discrete set of colors (for statistical plots, i.e. bar plots)
+
+# diverse
+RANDOM_STATE: 42 # what else ;)

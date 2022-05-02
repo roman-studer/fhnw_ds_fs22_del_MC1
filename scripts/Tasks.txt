@@ -1,0 +1,29 @@
+Models to train:
+
+1. SGD Optimizer, No Regularization and Batch Normalization
+    - [ ] Simpler CNN (1 Convolution, 1 Pooling, 1 Linear)
+    - [ ] LeNet5 (Mittlere Komplexität, Reg und BN entfernt)
+    - [ ] Komplexes CNN-Modell (M Convolutions, M Pooling, M Linear)
+
+    Parametertuning:
+    - [ ] Learning Rate
+    - [ ] Batch Size
+
+    Variations:
+    - [ ] N Linear Layers
+    - [ ] N Units per Layer
+    - [ ] N Filters,
+    - [ ] Kernel Size
+    - [ ] Stride
+    - [ ] Padding
+
+2. SGD Optimizer, Including Regularization
+    - [ ] L1 Weight Penalty
+    - [ ] L2 Weight Penalty
+    - [ ] Dropout
+
+3. SGD Optimizer, No Reg, With BN
+
+4. Adam Optimizer, No BN
+    - [ ] With Reg
+    - [ ] No Reg

@@ -2,6 +2,8 @@ import os
 from torch.utils.data import Dataset
 import pandas as pd
 from torchvision.io import read_image
+import torch
+import torch.nn as nn
 
 
 class Cxr8ImageDatasetLoader(Dataset):
@@ -10,6 +12,10 @@ class Cxr8ImageDatasetLoader(Dataset):
         self.img_dir = img_dir
         self.transform = transform
         self.target_transform = target_transform
+        self.idx_to_label = {
+            'Atelectasis': 0,
+            'Effusion': 1
+        }
 
     def __len__(self):
         return len(self.img_labels)
@@ -22,6 +28,10 @@ class Cxr8ImageDatasetLoader(Dataset):
             image = self.transform(image)
         if self.target_transform:
             label = self.target_transform(label)
+
+        label = self.idx_to_label[label]
+        label = torch.tensor(label)
+
         return image, label
 
 
