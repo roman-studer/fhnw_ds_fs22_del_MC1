@@ -1,0 +1,7 @@
+"Name","Tags","net","Test Accuracy","Test Loss","learning_rate"
+"Net: ComplexCNN Transf: Cxr8 Epochs: 15","Adam, Reg","ComplexCNN","65.27","0.03914703415088401","0.002"
+"Net: ComplexCNN Transf: Cxr8 Epochs: 15","Adam, No Reg","ComplexCNN","62.02","0.04515705460989791","0.002"
+"Net: Cxr8Net Transf: Cxr8 Epochs: 15","Adam, No Reg","Cxr8Net","64.82","0.0498333685782922","0.002"
+"Net: Cxr8Net Transf: Cxr8 Epochs: 15","Adam, Reg","Cxr8Net","64.82","0.0546458501315651","0.002"
+"Net: LeNet5 Transf: Cxr8 Epochs: 15","Adam, Reg","LeNet5","58.81","0.2433966109035973","0.002"
+"Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15","Adam, No Reg","LeNet5NoRegNoBN","61.25","0.08427329010912454","0.002"

@@ -1,0 +1,4 @@
+"Name","net","Test Accuracy","Test Loss"
+"Net: LeNet5 Transf: Cxr8 Epochs: 15","LeNet5","61.91","0.21962055776366876"
+"Net: ComplexCNN Transf: Cxr8 Epochs: 15","ComplexCNN","67.92","0.03854603900018389"
+"Net: Cxr8Net Transf: Cxr8 Epochs: 15","Cxr8Net","66.34","0.04936430448487917"

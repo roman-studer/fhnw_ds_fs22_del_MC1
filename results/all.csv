@@ -1,0 +1,44 @@
+Name,Tags,net,Test Accuracy,Test Loss,learning_rate,Epoch,PADDING,Train Accuracy,Train Loss,batch_size,criterion,epochs,in_channels,kernel_size,nconvolutions,optimizer,out_channels,stride,transformer
+Net: Cxr8Net Transf: Cxr8 Epochs: 15,"Batchnorm, Dropout",,62.73,0.040186366,0.000411782,14,,67.84,0.037486655,,,,,,,,,,
+Net: ComplexCNN Transf: Cxr8 Epochs: 15,"Adam, Reg",ComplexCNN,65.27,0.039147034,0.002,14,"[0,0,0]",71.3,0.035258868,16,Cross Entropy,15,"[1,6,10]","[12,6,4]",3,Adam,"[6,10,5]","[3,2,1]",Cxr8
+Net: Cxr8Net Transf: Cxr8 Epochs: 15,"Adam, Reg",Cxr8Net,64.82,0.05464585,0.002,14,0,82.3,0.02426363,16,Cross Entropy,15,1,5,1,Adam,3,1,Cxr8
+Net: ComplexCNN Transf: Cxr8 Epochs: 15,"Adam, No Reg",ComplexCNN,62.02,0.045157055,0.002,14,"[0,0,0]",72.64,0.034284856,16,Cross Entropy,15,"[1,6,10]","[12,6,4]",3,Adam,"[6,10,5]","[3,2,1]",Cxr8
+Net: Cxr8Net Transf: Cxr8 Epochs: 15,"Adam, No Reg",Cxr8Net,64.82,0.049833369,0.002,14,0,76.36,0.030009966,16,Cross Entropy,15,1,5,1,Adam,3,1,Cxr8
+Net: LeNet5 Transf: Cxr8 Epochs: 15,"Adam, Reg",LeNet5,58.81,0.243396611,0.002,14,"[0,0]",96.7,0.003551466,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"Adam, No Reg",LeNet5NoRegNoBN,61.25,0.08427329,0.002,14,"[0,0]",90.96,0.013077617,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: LeNet5 Transf: Cxr8 Epochs: 15,"Batchnorm, Dropout",LeNet5,59.73,0.229510328,0.002,14,"[0,0]",98.75,0.002196577,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: LeNet5 Transf: Cxr8 Epochs: 15,"Batchnorm, Dropout",LeNet5,58.2,0.209190335,0.002,14,"[0,0]",99.45,0.001296699,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: LeNet5 Transf: Cxr8 Epochs: 15,"Batchnorm, Dropout",LeNet5,62.68,0.048227602,0.002,14,"[0,0]",78.98,0.029303955,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",LeNet5NoRegNoBN,63.34,0.165767523,0.002,14,"[0,0]",99.97,0.000292162,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",LeNet5NoRegNoBN,61.97,0.208039963,0.002,14,"[0,0]",99.98,0.000100298,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",LeNet5NoRegNoBN,60.85,0.129891879,0.002,14,"[0,0]",98.03,0.00368946,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"Learning Rate, No Reg",LeNet5NoRegNoBN,61.41,0.041241143,0.001452499,14,"[0,0]",65.28,0.03901251,16,Cross Entropy,15,"[1,6]","[5,5]",2,SGD,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"Learning Rate, No Reg",LeNet5NoRegNoBN,64.92,0.039735549,0.004607391,14,"[0,0]",67.13,0.038087757,16,Cross Entropy,15,"[1,6]","[5,5]",2,SGD,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"Learning Rate, No Reg",LeNet5NoRegNoBN,61.3,0.042133017,0.006741343,14,"[0,0]",68.44,0.037441748,16,Cross Entropy,15,"[1,6]","[5,5]",2,SGD,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"Batch Size, No Reg",LeNet5NoRegNoBN,65.94,0.082361915,0.02,14,"[0,0]",76.15,0.062769882,8,Cross Entropy,15,"[1,6]","[5,5]",2,SGD,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"Batch Size, No Reg",LeNet5NoRegNoBN,63.75,0.094820331,0.02,14,"[0,0]",82.19,0.050041189,8,Cross Entropy,15,"[1,6]","[5,5]",2,SGD,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"Batch Size, No Reg",LeNet5NoRegNoBN,61.56,0.020749159,0.02,14,"[0,0]",70.15,0.018200839,32,Cross Entropy,15,"[1,6]","[5,5]",2,SGD,"[6,16]","[1,1]",Cxr8
+Net: ComplexCNNNoRegNoBN Transf: Cxr8 Epochs: 15,"Learning Rate, No Reg",ComplexCNNNoRegNoBN,40.78,0.044419357,0.000545865,14,"[0,0,0]",55.1,0.043092579,16,Cross Entropy,15,"[1,6,10]","[12,6,4]",3,SGD,"[6,10,5]","[3,2,1]",Cxr8
+Net: ComplexCNNNoRegNoBN Transf: Cxr8 Epochs: 15,"Learning Rate, No Reg",ComplexCNNNoRegNoBN,40.78,0.044864215,0.005720825,14,"[0,0,0]",55.1,0.043055446,16,Cross Entropy,15,"[1,6,10]","[12,6,4]",3,SGD,"[6,10,5]","[3,2,1]",Cxr8
+Net: ComplexCNNNoRegNoBN Transf: Cxr8 Epochs: 15,"Learning Rate, No Reg",ComplexCNNNoRegNoBN,40.78,0.044813319,0.001372471,14,"[0,0,0]",55.1,0.043059749,16,Cross Entropy,15,"[1,6,10]","[12,6,4]",3,SGD,"[6,10,5]","[3,2,1]",Cxr8
+Net: Cxr8NetNoRegNoBN Transf: Cxr8 Epochs: 15,"Learning Rate, No Reg",Cxr8NetNoRegNoBN,63.03,0.040455862,0.002332275,14,0,64.37,0.039632526,16,Cross Entropy,15,1,5,1,SGD,3,1,Cxr8
+Net: Cxr8NetNoRegNoBN Transf: Cxr8 Epochs: 15,"Learning Rate, No Reg",Cxr8NetNoRegNoBN,62.07,0.040909958,0.005083781,14,0,65.67,0.038791541,16,Cross Entropy,15,1,5,1,SGD,3,1,Cxr8
+Net: Cxr8NetNoRegNoBN Transf: Cxr8 Epochs: 15,"Learning Rate, No Reg",Cxr8NetNoRegNoBN,62.68,0.040644723,0.006886424,14,0,66.15,0.038719182,16,Cross Entropy,15,1,5,1,SGD,3,1,Cxr8
+Net: ComplexCNNNoRegNoBN Transf: Cxr8 Epochs: 15,"Batch Size, No Reg",Cxr8NetNoRegNoBN,63.59,0.040676605,0.02,14,0,69.29,0.036853841,16,Cross Entropy,15,1,5,1,SGD,3,1,Cxr8
+Net: ComplexCNNNoRegNoBN Transf: Cxr8 Epochs: 15,"Batch Size, No Reg",ComplexCNNNoRegNoBN,40.78,0.024138569,0.02,14,"[0,0,0]",55.1,0.023007796,30,Cross Entropy,15,"[1,6,10]","[12,6,4]",3,SGD,"[6,10,5]","[3,2,1]",Cxr8
+Net: ComplexCNNNoRegNoBN Transf: Cxr8 Epochs: 15,"Batch Size, No Reg",ComplexCNNNoRegNoBN,40.78,0.040017537,0.02,14,"[0,0,0]",55.1,0.038220843,18,Cross Entropy,15,"[1,6,10]","[12,6,4]",3,SGD,"[6,10,5]","[3,2,1]",Cxr8
+Net: Cxr8NetNoRegNoBN Transf: Cxr8 Epochs: 15,"Batch Size, No Reg",Cxr8NetNoRegNoBN,64.61,0.063676928,0.02,14,0,70.41,0.057724058,10,Cross Entropy,15,1,5,1,SGD,3,1,Cxr8
+Net: Cxr8NetNoRegNoBN Transf: Cxr8 Epochs: 15,"Batch Size, No Reg",Cxr8NetNoRegNoBN,64.46,0.024545663,0.02,14,0,67.82,0.023106366,26,Cross Entropy,15,1,5,1,SGD,3,1,Cxr8
+Net: Cxr8NetNoRegNoBN Transf: Cxr8 Epochs: 15,"Batch Size, No Reg",Cxr8NetNoRegNoBN,65.07,0.028827613,0.02,14,0,68.06,0.027202687,22,Cross Entropy,15,1,5,1,SGD,3,1,Cxr8
+Net: LeNet5 Transf: Cxr8 Epochs: 15,"Batchnorm, Dropout",LeNet5,61.91,0.219620558,0.002,14,"[0,0]",99.48,0.00148826,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: ComplexCNN Transf: Cxr8 Epochs: 15,"Batchnorm, Dropout",ComplexCNN,67.92,0.038546039,0.002,14,"[0,0,0]",73.87,0.033718034,16,Cross Entropy,15,"[1,6,10]","[12,6,4]",3,Adam,"[6,10,5]","[3,2,1]",Cxr8
+Net: Cxr8Net Transf: Cxr8 Epochs: 15,"Batchnorm, Dropout",Cxr8Net,66.34,0.049364304,0.002,14,0,82.75,0.024292818,16,Cross Entropy,15,1,5,1,Adam,3,1,Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",LeNet5NoRegNoBN,59.78,0.164291809,0.002,14,"[0,0]",95.39,0.007312641,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",LeNet5NoRegNoBN,59.32,0.29689328,0.002,14,"[0,0]",99.82,0.000253153,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: LeNet5NoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",LeNet5NoRegNoBN,61.81,0.242089477,0.002,14,"[0,0]",99.85,0.000170254,16,Cross Entropy,15,"[1,6]","[5,5]",2,Adam,"[6,16]","[1,1]",Cxr8
+Net: ComplexCNNNoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",ComplexCNNNoRegNoBN,64.87,0.039903217,0.002,14,"[0,0,0]",68.27,0.037511353,16,Cross Entropy,15,"[1,6,10]","[12,6,4]",3,Adam,"[6,10,5]","[3,2,1]",Cxr8
+Net: ComplexCNNNoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",,65.78,0.039878283,0.000411782,14,,69.45,0.0363873,,,,,,,,,,
+Net: ComplexCNNNoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",ComplexCNNNoRegNoBN,40.78,0.044879357,0.002,14,"[0,0,0]",55.1,0.043073255,16,Cross Entropy,15,"[1,6,10]","[12,6,4]",3,Adam,"[6,10,5]","[3,2,1]",Cxr8
+Net: Cxr8NetNoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",Cxr8NetNoRegNoBN,64.36,0.042442169,0.002,14,0,75.96,0.030823978,16,Cross Entropy,15,1,5,1,Adam,3,1,Cxr8
+Net: Cxr8NetNoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",Cxr8NetNoRegNoBN,64.82,0.041135147,0.002,14,0,73.55,0.033057643,16,Cross Entropy,15,1,5,1,Adam,3,1,Cxr8
+Net: Cxr8NetNoRegNoBN Transf: Cxr8 Epochs: 15,"L2 Norm, No Reg",Cxr8NetNoRegNoBN,61.3,0.044205869,0.002,14,0,73.09,0.033579314,16,Cross Entropy,15,1,5,1,Adam,3,1,Cxr8

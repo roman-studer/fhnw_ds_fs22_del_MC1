@@ -198,8 +198,6 @@ if SCHEDULER == "ExponentialLR" or SCHEDULER is None:
 print(f'[INFO] Optimizer: {OPTIMIZER}, learning rate: {LEARNING_RATE}')
 
 
-wandb.watch(net, log="all")
-
 print('\n[INFO] Started Training')
 
 for epoch in range(EPOCHS):

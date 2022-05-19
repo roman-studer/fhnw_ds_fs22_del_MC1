@@ -1,7 +1,8 @@
 import os
 from torch.utils.data import Dataset
 import pandas as pd
-from torchvision.io import read_image
+import torchvision.transforms as transforms
+from PIL import Image
 import torch
 import torch.nn as nn
 
@@ -22,7 +23,15 @@ class Cxr8ImageDatasetLoader(Dataset):
 
     def __getitem__(self, idx):
         img_path = os.path.join(self.img_dir, self.img_labels.iloc[idx, 0])
-        image = read_image(img_path)
+
+        image = Image.open(img_path)
+
+        transform = transforms.Compose([
+            transforms.PILToTensor()
+        ])
+
+        image = transform(image)
+
         label = self.img_labels.iloc[idx, 1]
         if self.transform:
             image = self.transform(image)

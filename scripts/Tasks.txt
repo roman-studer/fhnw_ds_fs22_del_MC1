@@ -1,7 +1,7 @@
 Models to train:
 
 1. SGD Optimizer, No Regularization and Batch Normalization
-    - [ ] Simpler CNN (1 Convolution, 1 Pooling, 1 Linear)
+    - [x] Simpler CNN (1 Convolution, 1 Pooling, 1 Linear)
     - [ ] LeNet5 (Mittlere Komplexität, Reg und BN entfernt)
     - [ ] Komplexes CNN-Modell (M Convolutions, M Pooling, M Linear)
 

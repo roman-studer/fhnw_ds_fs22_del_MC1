@@ -9,24 +9,27 @@ PLOT_DIR_BINARY: '../plots/binary/'
 
 
 # ml_settings
-NAME: 'Cxr8NetNoRegNoBN'
-NET: 'Cxr8NetNoRegNoBN'
+NAME: 'Cxr8Net'
+NET: 'Cxr8Net'
 DEVICE: "gpu"
 TRAIN_SIZE: 0.8
 LEARNING_RATE: 0.002
 BATCH_SIZE: 16
-EPOCHS: 20
+EPOCHS: 15
 TRANSFORMER: 'Cxr8' #'Crop'
 CRITERION: 'Cross Entropy'
+L2_REGULARIZATION: False
 OPTIMIZER: 'SGD'
 TASK: None # 'Classification' # if classification, creates binary evaluation plots
 SAVE_MODEL: False
 SCHEDULER: 'ExponentialLR'
-DROPOUT_RATE: 0.5
+DROPOUT_RATE: 0.3
 
-IMAGE_WIDTH: 1000
-IMAGE_HEIGHT: 1000
-IMAGE_RESIZE: 32 # 32 for LeNet and for Cxr8Net*
+
+
+IMAGE_WIDTH: 512
+IMAGE_HEIGHT: 512
+IMAGE_RESIZE: 256 # 32 for LeNet and for Cxr8Net*
 
 # plot settings
 COLOR_SEQUENTIAL:   "inferno" # matplotlib color map (used for heatmaps)
